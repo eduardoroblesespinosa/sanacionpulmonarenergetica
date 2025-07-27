@@ -1,0 +1,130 @@
+body {
+    background: linear-gradient(to bottom right, #120c22, #070d1a);
+    color: #f0f0f0;
+}
+
+.card {
+    background-color: rgba(10, 20, 40, 0.5) !important;
+    border-color: #334a69 !important;
+    backdrop-filter: blur(5px);
+}
+
+.text-primary {
+    color: #00bfff !important; /* Deep Sky Blue */
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.btn-outline-primary {
+    color: #00bfff;
+    border-color: #00bfff;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary.active {
+    background-color: #00bfff;
+    color: #120c22;
+    box-shadow: 0 0 15px #00bfff;
+}
+
+.btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #120c22;
+    box-shadow: 0 0 15px #28a745;
+}
+
+.btn-outline-warning {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+.btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: #120c22;
+    box-shadow: 0 0 15px #ffc107;
+}
+
+.btn-outline-info {
+    color: #00f0ff;
+    border-color: #00f0ff;
+     transition: all 0.3s ease;
+}
+.btn-outline-info:hover, .btn-outline-info.active {
+    background-color: #00f0ff;
+    color: #120c22;
+    box-shadow: 0 0 15px #00f0ff;
+}
+
+.text-light {
+    color: #f8f9fa !important;
+}
+
+.form-select {
+    border-color: #334a69;
+}
+
+.form-select:focus {
+    border-color: #00bfff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 191, 255, 0.25);
+}
+
+#canvas-container {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid #334a69;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+#lung-canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#lungs-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.3;
+    pointer-events: none; /* Allows clicks to go through to the canvas if needed */
+    transform: scale(1);
+    transition: transform 3s ease-in-out;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 191, 255, 0.1) !important;
+}
+
+.list-group-item.journal-entry {
+    background-color: rgba(10, 20, 40, 0.4);
+    border-color: #334a69;
+    color: #f0f0f0;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    padding: 1.5rem;
+}
+
+.journal-entry h5 {
+    color: #00bfff;
+}
+
+.journal-entry .progress {
+    height: 10px;
+    background-color: #334a69;
+}
